@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheperd Storage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1e1e1e;
+            font-family: 'Arial', sans-serif;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Fondo con imagen */
+        body.bg-image {
+            background-image: url('https://i.pinimg.com/originals/9a/15/0f/9a150f4edf3aaa3b5ec417fc970c5372.gif'); /* Cambia 'TU_IMAGEN.jpg' por la ruta de tu imagen */
+        }
+
+        /* Fondo con video */
+        body.bg-video {
+            position: relative;
+        }
+
+        video.bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3em;
+            text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00ffea;
+            margin-bottom: 50px;
+        }
+
+        .links a {
+            display: block;
+            font-size: 2em;
+            color: #fff;
+            text-decoration: none;
+            margin: 20px 0;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #00ffea;
+        }
+    </style>
+</head>
+<body class="bg-image"> <!-- Cambia bg-image por bg-video si quieres el fondo de video -->
+    <!-- Si usas fondo de video, inserta el video aquí -->
+    <!--
+    <video class="bg-video" autoplay loop muted>
+        <source src="TU_VIDEO.mp4" type="video/mp4">
+    </video>
+    -->
+
+    <div class="container">
+        <h1>Sheperd Storage</h1>
+        <div class="links">
+            <a href="https://www.youtube.com/@PajasNevadas" target="_blank">YouTube</a>
+            <a href="https://discord.gg/TSVaF2WDac" target="_blank">Discord</a>
+        </div>
+    </div>
+</body>
+</html>
